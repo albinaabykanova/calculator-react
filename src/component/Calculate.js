@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react";
+import React, { memo, useEffect, useState } from "react";
 
 
 
@@ -28,5 +28,39 @@ const Calculate = () => {
         setValue((num * -1).toString());
         return;
     }
+
+    if (content === "%") {
+        setValue((num / 100).toString());
+        setMemory(null);
+        setOperator(null);
+        return;
+    }
+
+    if (content === ".") {
+        if (value.includes(".")) return;
+
+        setValue(value + ".");
+        return;
+    }
+
+    if (content === "+") {
+      if (operator !== null) {
+        if (operator === "+") {
+            setMemory(memory + parseFloat(value));
+        } else if (operator === "-") {
+            setMemory(memory - parseFloat(value));
+        } else if (operator === "x") {
+            setMemory(memory * parseFloat(value));
+        } else if (operator === "+") {
+            setMemory(memory / parseFloat(value));
+        }
+      } else {
+        setMemory(parseFloat(value));
+      }
+      setValue("0");
+      setOperator("+");
+      return;
+    }
+    
    }
 }
