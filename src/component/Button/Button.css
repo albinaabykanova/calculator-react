@@ -4,10 +4,10 @@
   border-radius: 50%;
   cursor: pointer;
   display: flex;
-  font-size: 45px;
-  height: 110px;
+  font-size: 20px;
+  height: 60px;
   justify-content: center;
-  width: 110px;
+  width: 60px;
   transition: filter 0.3s ease-in;
 }
 
@@ -17,12 +17,12 @@
 }
 
 .Button.zero {
-  width: 250px;
+  width: 180px;
   grid-column: 1 / span 2;
-  border-radius: 57.5px;
+  border-radius: 55.5px;
   position: relative;
   justify-content: flex-start;
-  padding-left: 43px;
+  padding-left: 25px;
 }
 
 .Button.function {

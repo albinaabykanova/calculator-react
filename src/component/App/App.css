@@ -2,36 +2,39 @@
   background: black;
   border-radius: 50px;
   color: white;
-  height: 1218px;
-  padding: 20px;
+  height: 600px;
+  padding: 17px;
   position: relative;
-  width: 563px;
+  width: 400px;
+  margin-left: 200px;
+  margin-top: 50px;
+  align-items: center;
 }
 
 .top {
   display: flex;
-  height: 250px;
+  height: 50px;
   justify-content: space-between;
-  padding: 0 20px;
+  padding: 0 15px;
 }
 
 .display {
-  font-size: 130px;
-  font-weight: 300;
+  font-size: 50px;
+  font-weight: 150;
   margin-bottom: 20px;
   text-align: right;
 }
 
 .buttons {
   display: grid;
-  grid-gap: 20px;
+  grid-gap: 15px;
   grid-template-columns: repeat(4, 1fr);
   grid-template-rows: repeat(5, 1fr);
 }
 
 .bottom {
   position: absolute;
-  width: 200px;
+  width: 150px;
   height: 5px;
   background: white;
   bottom: 10px;
