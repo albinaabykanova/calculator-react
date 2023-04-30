@@ -6,9 +6,9 @@
   padding: 17px;
   position: relative;
   width: 400px;
-  margin-left: 200px;
+  margin-left: 20px;
   margin-top: 50px;
-  align-items: center;
+  justify-content: center;
 }
 
 .top {
